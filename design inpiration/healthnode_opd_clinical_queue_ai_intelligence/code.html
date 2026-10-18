@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>DocNode | Medical AI Workspace</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-error-container":"#ffdad6","outline-variant":"#464554","surface":"#131315","surface-container-low":"#1b1b1d","surface-container-highest":"#353437","surface-container-high":"#2a2a2c","on-background":"#e5e1e4","surface-bright":"#39393b","surface-container-lowest":"#0e0e10","secondary":"#c4c0ff","on-secondary-container":"#b4b0ff","tertiary-fixed-dim":"#35dfae","on-error":"#690005","surface-tint":"#c4c0ff","on-secondary":"#251690","outline":"#918fa0","on-tertiary-fixed-variant":"#00513c","inverse-surface":"#e5e1e4","on-tertiary-fixed":"#002116","primary-container":"#6b62f2","inverse-on-surface":"#303032","on-tertiary-container":"#ffffff","on-surface-variant":"#c8c4d7","error-container":"#93000a","on-primary":"#2100a4","secondary-fixed":"#e3dfff","on-primary-container":"#ffffff","primary":"#c4c0ff","surface-variant":"#353437","on-surface":"#e5e1e4","secondary-fixed-dim":"#c4c0ff","tertiary-container":"#008767","primary-fixed":"#e3dfff","on-secondary-fixed":"#120068","tertiary":"#35dfae","error":"#ffb4ab","surface-container":"#201f21","on-tertiary":"#003829","secondary-container":"#4037a9","surface-dim":"#131315","on-secondary-fixed-variant":"#3d34a6","background":"#131315","on-primary-fixed":"#110068","on-primary-fixed-variant":"#3929c0","inverse-primary":"#5247d8","tertiary-fixed":"#5dfcc9","primary-fixed-dim":"#c4c0ff"},borderRadius:{DEFAULT:"1rem",lg:"2rem",xl:"3rem",full:"9999px"},spacing:{"gutter-sm":"0.75rem","margin-sm":"1rem","margin":"1.5rem","space-lg":"1.25rem","space-xl":"2rem","space-md":"0.875rem","gutter":"1rem","space-sm":"0.5rem","space-xs":"0.25rem","margin-lg":"2.5rem","gutter-lg":"1.5rem"},fontFamily:{"body-md":["Inter"],"headline-lg":["DM Sans"],"mono-metric":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"display-lg-mobile":["DM Sans"],"display-lg":["DM Sans"],"label-sm":["Inter"],"headline-sm":["DM Sans"],"headline-md":["DM Sans"],"headline-lg-mobile":["DM Sans"],"body-sm":["Inter"]},fontSize:{"body-md":["14px",{lineHeight:"20px",letterSpacing:"-0.002em",fontWeight:"400"}],"headline-lg":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"500"}],"mono-metric":["13px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"500"}],"display-lg-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"600"}],"display-lg":["44px",{lineHeight:"52px",letterSpacing:"-0.03em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"500"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"500"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"500"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0em",fontWeight:"400"}]}}}};</script></head><body class="min-h-screen bg-surface text-on-surface antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-6 left-0 right-0 z-50 flex justify-center px-margin pointer-events-none"><div class="pointer-events-auto w-full max-w-[1200px] h-16 bg-surface-container/85 backdrop-blur-md rounded-[19px] border border-white/10 px-margin flex items-center justify-between shadow-[0_16px_40px_-12px_rgba(0,0,0,0.65),0_0_32px_0_rgba(107,98,242,0.12)]"><div class="flex items-center gap-space-sm"><img alt="DocNode Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XKaeERjM66hAuEYNNzuqejhMcIFBs3dBlJiDS4tBys4K7k_cbCpH-r91f-EiXFh6i2EFPIt-U6znAp3QRjF8ySsGjVuhKUGEWfbCv-KJrFQ2bk9smGCdqRvD08e5Uo0mcMyAcEOmVUOzJqFkthVyQ_x2w8_4hfhUbcMk7Oxs1OLjZQ3gFuhrKMVhrC4ir4iyCsyROFMbloFOwb6gS_oDiyjyq3BPX2pCaHZM_9wpQYyA"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-medium">DocNode</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-full bg-surface-container-highest text-primary border border-primary/20 tracking-wider uppercase ml-space-xs">AI Core v4.2</span></div><nav class="hidden xl:flex items-center gap-space-xs p-1 rounded-full bg-surface-container-low/50 border border-white/5" data-active-classes="bg-surface-container-highest text-on-surface font-medium rounded-full shadow-inner"><a class="px-space-md py-1.5 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a><a aria-current="page" class="px-space-md py-1.5 transition-colors bg-surface-container-highest text-on-surface font-medium rounded-full shadow-inner" data-path="opd-clinical-queue" href="#">OPD Clinical Queue</a><a class="px-space-md py-1.5 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="diagnostics-telemetry" href="#">Diagnostics &amp; Telemetry</a><a class="px-space-md py-1.5 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="ai-neural-consult" href="#">AI Neural Consult</a><a class="px-space-md py-1.5 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="integrations" href="#">Integrations</a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-lowest border border-white/5"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Systems Live</span></div><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-white/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgpfihnPJpQiVW_zwXn_QhzC2KHd60rg2GMOZKtYl6c815rQewGO0heuzm-j7894hSJHmzycaw16Xs57NsT-7jTvPJOptpIwfDLSykttIkvi7DlaYWJoWv0UH3n3_fShskgQ9Mvx35jhV7EhNfhGkWmaA0KQF9E334p-p8799moDeSSD8vlttW4kuDmz1emtIIhLEpn2JRHpVyVVvsgo96dtMCfDUdIlHN4PHw-kn0"/><span class="hidden lg:inline-block font-label-md text-label-md text-on-surface font-medium">Dr. Elena Vance</span></div><button class="px-space-md py-2 rounded-full bg-on-primary-container text-surface-container-lowest font-body-sm text-body-sm font-medium hover:bg-on-background transition-all shadow-[0_0_20px_rgba(255,255,255,0.25)] active:scale-95">Initiate Triage</button></div></div></header><main class="w-full min-h-screen pt-28 pb-20 px-gutter-lg max-w-[1440px] mx-auto"><div class="flex flex-col w-full gap-y-space-xl">
+<!-- Dynamic Dusk Ambient Glow Layer -->
+<div class="relative w-full">
+<div class="absolute -top-16 left-1/4 w-[480px] h-[220px] bg-primary-container/10 blur-[110px] pointer-events-none rounded-full"></div>
+<div class="absolute -top-10 right-10 w-[360px] h-[180px] bg-tertiary-container/10 blur-[100px] pointer-events-none rounded-full"></div>
+<!-- Header & Filter Workspace Bar -->
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex items-center gap-space-xs overflow-x-auto p-1.5 rounded-full bg-surface-container-low/70 backdrop-blur-md shadow-inner">
+<button class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all">All Units</button>
+<button class="px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-highest text-on-surface font-medium shadow-[0_2px_8px_rgba(0,0,0,0.4)] flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          Active OPD Queue (14)
+        </button>
+<button class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1.5">
+          ICU Telemetry (6)
+          <span class="px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[10px]">6</span>
+</button>
+<button class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1.5">
+          Rapid Triage
+          <span class="px-1.5 py-0.5 rounded-full bg-error-container/50 text-error text-[10px] font-semibold">2</span>
+</button>
+</div>
+<!-- Quick Operational Controls -->
+<div class="flex items-center gap-space-sm">
+<div class="hidden sm:flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high/80 text-on-surface-variant font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-sm text-tertiary">lock</span>
+<span>HIPAA Vaulted • 256-bit</span>
+</div>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-high/80 hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center gap-2 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-sm text-primary">sync</span>
+<span>EHR Live Stream</span>
+</button>
+</div>
+</div>
+<!-- Quick Metrics Deck -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Metric 1 -->
+<div class="p-space-lg rounded-[20px] bg-surface-container/90 backdrop-blur-md shadow-[0_12px_32px_rgba(0,0,0,0.35)] flex flex-col justify-between group hover:bg-surface-container-high/90 transition-all">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-sm">
+<span class="font-label-md text-label-md tracking-wide uppercase">Median Triage Velocity</span>
+<span class="material-symbols-outlined text-base text-primary">timer</span>
+</div>
+<div class="flex items-baseline justify-between">
+<div class="font-headline-lg text-headline-lg font-medium text-on-surface">42 <span class="text-headline-sm font-normal text-on-surface-variant">sec</span></div>
+<div class="flex items-center gap-0.5 font-label-sm text-label-sm text-tertiary bg-tertiary-container/20 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-xs">trending_down</span>
+<span>-18% Target</span>
+</div>
+</div>
+<div class="mt-space-sm w-full bg-surface-container-lowest h-1 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full w-[82%] rounded-full"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="p-space-lg rounded-[20px] bg-surface-container/90 backdrop-blur-md shadow-[0_12px_32px_rgba(0,0,0,0.35)] flex flex-col justify-between group hover:bg-surface-container-high/90 transition-all">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-sm">
+<span class="font-label-md text-label-md tracking-wide uppercase">AI Diagnostic Concordance</span>
+<span class="material-symbols-outlined text-base text-tertiary">neurology</span>
+</div>
+<div class="flex items-baseline justify-between">
+<div class="font-headline-lg text-headline-lg font-medium text-on-surface">99.4<span class="text-headline-sm font-normal text-on-surface-variant">%</span></div>
+<span class="font-label-sm text-label-sm text-primary px-2 py-0.5 rounded-full bg-primary-container/20 font-medium">Gemini MedCore</span>
+</div>
+<div class="mt-space-sm w-full bg-surface-container-lowest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full w-[99.4%] rounded-full shadow-[0_0_8px_rgba(53,223,174,0.6)]"></div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="p-space-lg rounded-[20px] bg-surface-container/90 backdrop-blur-md shadow-[0_12px_32px_rgba(0,0,0,0.35)] flex flex-col justify-between group hover:bg-surface-container-high/90 transition-all">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-sm">
+<span class="font-label-md text-label-md tracking-wide uppercase">Multivariable Alerts</span>
+<span class="material-symbols-outlined text-base text-error animate-pulse">crisis_alert</span>
+</div>
+<div class="flex items-baseline justify-between">
+<div class="font-headline-lg text-headline-lg font-medium text-on-surface">3 <span class="text-body-md text-secondary">High</span> <span class="text-on-surface-variant">/</span> 1 <span class="text-body-md text-error">Crit</span></div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/50 text-secondary text-label-sm font-label-sm">Active Polling</span>
+</div>
+<div class="mt-space-sm w-full bg-surface-container-lowest h-1 rounded-full overflow-hidden flex">
+<div class="bg-secondary-container h-full w-[70%]"></div>
+<div class="bg-error h-full w-[30%]"></div>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="p-space-lg rounded-[20px] bg-surface-container/90 backdrop-blur-md shadow-[0_12px_32px_rgba(0,0,0,0.35)] flex flex-col justify-between group hover:bg-surface-container-high/90 transition-all">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-sm">
+<span class="font-label-md text-label-md tracking-wide uppercase">Physician Throughput</span>
+<span class="material-symbols-outlined text-base text-secondary">speed</span>
+</div>
+<div class="flex items-baseline justify-between">
+<div class="font-headline-lg text-headline-lg font-medium text-on-surface">38 <span class="text-headline-sm font-normal text-on-surface-variant">Pt/hr</span></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-2 py-0.5 rounded-full bg-surface-container-highest">+6/hr shift peak</span>
+</div>
+<div class="mt-space-sm w-full bg-surface-container-lowest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[76%] rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Editorial Two-Column Main Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT COLUMN: Live OPD Clinical Queue (approx 60%) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="bg-surface-container/90 backdrop-blur-md rounded-[20px] p-space-lg shadow-[0_16px_40px_-10px_rgba(0,0,0,0.5)]">
+<!-- Queue Filter & Command Header -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-md pb-space-md">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Clinical Inflow</h2>
+<span class="font-mono-metric text-mono-metric px-2 py-0.5 rounded-full bg-surface-container-highest text-primary">5 Active Priorities</span>
+</div>
+<!-- Fast Pill Search Input with Shortcut -->
+<div class="relative flex items-center min-w-[240px]">
+<span class="material-symbols-outlined absolute left-3 text-sm text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm rounded-full pl-9 pr-9 py-2 focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" placeholder="Search patient, MRN, complaint..." type="text"/>
+<kbd class="absolute right-3 px-1.5 py-0.5 rounded bg-surface-container-highest text-outline text-[10px] font-mono shadow-sm">/</kbd>
+</div>
+</div>
+<!-- Table Micro-Header -->
+<div class="grid grid-cols-12 gap-2 px-space-md py-2 font-label-sm text-label-sm uppercase tracking-wider text-outline-variant">
+<div class="col-span-1">Seq</div>
+<div class="col-span-4">Patient Profile</div>
+<div class="col-span-3">Acuity &amp; State</div>
+<div class="col-span-3">Telemetry Synthesis</div>
+<div class="col-span-1 text-right">Review</div>
+</div>
+<!-- OPD Queue Items -->
+<div class="flex flex-col gap-y-1.5 mt-1" id="opd-patient-list">
+<!-- ROW 01 (Active / Selected with liquid glass bubble) -->
+<div class="grid grid-cols-12 gap-2 items-center px-space-md py-3.5 rounded-[16px] bg-surface-container-highest/80 backdrop-blur-md shadow-[0_8px_24px_-4px_rgba(107,98,242,0.25)] transition-all cursor-pointer relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary rounded-r"></div>
+<div class="col-span-1 font-mono-metric text-mono-metric text-primary font-bold">01</div>
+<div class="col-span-4 flex flex-col min-w-0 pr-1">
+<div class="flex items-center gap-1.5">
+<span class="font-body-md text-body-md font-medium text-on-surface truncate">Marcus Thorne</span>
+<span class="text-xs text-on-surface-variant font-mono">42M</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Acute pleuritic chest pain post-exertion</span>
+</div>
+<div class="col-span-3 flex flex-col gap-1">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-container/30 text-secondary text-label-sm font-label-sm w-fit font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+                ESI Level 2 • Urgent
+              </span>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">auto_awesome</span>
+                Diff Synthesized
+              </span>
+</div>
+<div class="col-span-3 flex flex-col font-mono-metric text-[11px] text-on-surface-variant">
+<span class="text-on-surface">BP 142/90 <span class="text-outline">|</span> SpO2 96%</span>
+<span class="text-error font-medium flex items-center gap-0.5">HR 104 bpm (Tachy)</span>
+</div>
+<div class="col-span-1 flex items-center justify-end">
+<span class="w-7 h-7 rounded-full bg-primary/20 text-primary flex items-center justify-center text-xs group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</span>
+</div>
+</div>
+<!-- ROW 02 -->
+<div class="grid grid-cols-12 gap-2 items-center px-space-md py-3 rounded-[16px] bg-surface-container-low/60 hover:bg-surface-container-high/60 transition-all cursor-pointer group">
+<div class="col-span-1 font-mono-metric text-mono-metric text-outline">02</div>
+<div class="col-span-4 flex flex-col min-w-0 pr-1">
+<div class="flex items-center gap-1.5">
+<span class="font-body-md text-body-md font-medium text-on-surface truncate">Elena Rostova</span>
+<span class="text-xs text-on-surface-variant font-mono">67F</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Progressive dyspnea &amp; pedal edema</span>
+</div>
+<div class="col-span-3 flex flex-col gap-1">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary text-label-sm font-label-sm w-fit font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                ESI Level 2
+              </span>
+<span class="font-label-sm text-label-sm text-outline-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">hourglass_empty</span>
+                Pending Echo
+              </span>
+</div>
+<div class="col-span-3 flex flex-col font-mono-metric text-[11px] text-on-surface-variant">
+<span>BP 158/94 <span class="text-outline">|</span> SpO2 93%</span>
+<span>HR 82 bpm • Sinus</span>
+</div>
+<div class="col-span-1 flex items-center justify-end">
+<span class="text-xs text-outline group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</span>
+</div>
+</div>
+<!-- ROW 03 (Critical) -->
+<div class="grid grid-cols-12 gap-2 items-center px-space-md py-3 rounded-[16px] bg-error-container/10 hover:bg-error-container/20 transition-all cursor-pointer group">
+<div class="col-span-1 font-mono-metric text-mono-metric text-error font-semibold">03</div>
+<div class="col-span-4 flex flex-col min-w-0 pr-1">
+<div class="flex items-center gap-1.5">
+<span class="font-body-md text-body-md font-medium text-on-surface truncate">Devon Chen</span>
+<span class="text-xs text-on-surface-variant font-mono">29M</span>
+</div>
+<span class="font-body-sm text-body-sm text-error truncate">Suspected anaphylactoid reaction to cephalosporin</span>
+</div>
+<div class="col-span-3 flex flex-col gap-1">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-error-container text-error text-label-sm font-label-sm w-fit font-bold shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+                ESI Level 1 • Critical
+              </span>
+<span class="font-label-sm text-label-sm text-error flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[13px]">emergency</span>
+                Bedside Stat
+              </span>
+</div>
+<div class="col-span-3 flex flex-col font-mono-metric text-[11px] text-on-surface-variant">
+<span class="text-error font-medium">BP 88/54 <span class="text-outline">|</span> SpO2 91%</span>
+<span class="text-error font-medium">HR 128 bpm • Stridor</span>
+</div>
+<div class="col-span-1 flex items-center justify-end">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+</div>
+</div>
+<!-- ROW 04 -->
+<div class="grid grid-cols-12 gap-2 items-center px-space-md py-3 rounded-[16px] bg-surface-container-low/60 hover:bg-surface-container-high/60 transition-all cursor-pointer group">
+<div class="col-span-1 font-mono-metric text-mono-metric text-outline">04</div>
+<div class="col-span-4 flex flex-col min-w-0 pr-1">
+<div class="flex items-center gap-1.5">
+<span class="font-body-md text-body-md font-medium text-on-surface truncate">Amina Al-Mansoor</span>
+<span class="text-xs text-on-surface-variant font-mono">34F</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Uncontrolled migraine with visual aura</span>
+</div>
+<div class="col-span-3 flex flex-col gap-1">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-label-sm font-label-sm w-fit">
+                ESI Level 3
+              </span>
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+                Protocol Stage 1
+              </span>
+</div>
+<div class="col-span-3 flex flex-col font-mono-metric text-[11px] text-on-surface-variant">
+<span>BP 122/78 <span class="text-outline">|</span> SpO2 99%</span>
+<span>HR 74 bpm • Regular</span>
+</div>
+<div class="col-span-1 flex items-center justify-end">
+<span class="text-xs text-outline group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</span>
+</div>
+</div>
+<!-- ROW 05 -->
+<div class="grid grid-cols-12 gap-2 items-center px-space-md py-3 rounded-[16px] bg-surface-container-low/60 hover:bg-surface-container-high/60 transition-all cursor-pointer group">
+<div class="col-span-1 font-mono-metric text-mono-metric text-outline">05</div>
+<div class="col-span-4 flex flex-col min-w-0 pr-1">
+<div class="flex items-center gap-1.5">
+<span class="font-body-md text-body-md font-medium text-on-surface truncate">Thomas K.</span>
+<span class="text-xs text-on-surface-variant font-mono">51M</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Post-operative wound inspection</span>
+</div>
+<div class="col-span-3 flex flex-col gap-1">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-label-sm font-label-sm w-fit">
+                ESI Level 4
+              </span>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+                EHR Synced
+              </span>
+</div>
+<div class="col-span-3 flex flex-col font-mono-metric text-[11px] text-on-surface-variant">
+<span>BP 118/74 <span class="text-outline">|</span> SpO2 98%</span>
+<span>HR 68 bpm • Apyrexial</span>
+</div>
+<div class="col-span-1 flex items-center justify-end">
+<span class="text-xs text-outline group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Pagination & Bulk Operations Footer -->
+<div class="mt-space-lg pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm bg-surface-container-low/30 px-space-md py-2.5 rounded-[14px]">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Showing <span class="text-on-surface font-medium">1-5</span> of 14 waiting</span>
+<span class="text-outline">|</span>
+<button class="text-primary hover:underline">Batch Prioritize</button>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+<span class="font-mono-metric text-xs px-2 text-on-surface">Page 1</span>
+<button class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Real-Time Ambient Consult Acoustic Telemetry Card -->
+<div class="p-space-lg rounded-[20px] bg-surface-container-low/80 backdrop-blur-md shadow-[0_12px_32px_rgba(0,0,0,0.3)] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Ambient Consultation Mic</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-2 py-0.5 rounded-full bg-surface-container-highest">Room 4B • Active</span>
+</div>
+<span class="font-mono-metric text-xs text-primary">04:18 Streamed</span>
+</div>
+<!-- Live Waveform Visualization -->
+<div class="w-full h-14 bg-surface-container-lowest/80 rounded-[12px] p-2 flex items-center justify-between gap-1 overflow-hidden px-4">
+<div class="w-1 bg-primary/40 h-3 rounded-full animate-pulse"></div>
+<div class="w-1 bg-primary/60 h-6 rounded-full"></div>
+<div class="w-1 bg-primary h-10 rounded-full"></div>
+<div class="w-1 bg-secondary h-8 rounded-full"></div>
+<div class="w-1 bg-primary-container h-4 rounded-full"></div>
+<div class="w-1 bg-primary h-11 rounded-full animate-pulse"></div>
+<div class="w-1 bg-tertiary h-9 rounded-full"></div>
+<div class="w-1 bg-primary h-6 rounded-full"></div>
+<div class="w-1 bg-primary/40 h-2 rounded-full"></div>
+<div class="w-1 bg-secondary h-7 rounded-full"></div>
+<div class="w-1 bg-primary h-12 rounded-full animate-pulse"></div>
+<div class="w-1 bg-primary-container h-8 rounded-full"></div>
+<div class="w-1 bg-primary/80 h-5 rounded-full"></div>
+<div class="w-1 bg-tertiary h-10 rounded-full"></div>
+<div class="w-1 bg-primary h-3 rounded-full"></div>
+<div class="w-1 bg-primary/30 h-1 rounded-full"></div>
+<div class="w-1 bg-primary h-7 rounded-full"></div>
+<div class="w-1 bg-secondary h-11 rounded-full animate-pulse"></div>
+<div class="w-1 bg-primary-container h-4 rounded-full"></div>
+<div class="w-1 bg-primary h-8 rounded-full"></div>
+<div class="w-1 bg-primary/50 h-3 rounded-full"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant italic">
+<span class="truncate">"...pain radiates subtly to the left scapula when taking a deep breath..."</span>
+<span class="font-label-sm not-italic text-tertiary ml-2 shrink-0">Entity Tagged: Pleuritic Chest Pain</span>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Gemini AI Clinical Intelligence & Decision Support (approx 40%) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Primary Gemini Card -->
+<div class="bg-surface-container/95 backdrop-blur-xl rounded-[20px] p-space-lg shadow-[0_20px_45px_-8px_rgba(0,0,0,0.65)] flex flex-col gap-space-lg relative overflow-hidden">
+<!-- Dusk Radial Bloom within Container -->
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-primary-container/20 blur-[60px] pointer-events-none rounded-full"></div>
+<!-- Dossier Header -->
+<div class="flex items-start justify-between relative z-10">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm font-semibold tracking-wide uppercase flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xs">neurology</span>
+                Gemini MedCore Engine
+              </span>
+<span class="font-label-sm text-label-sm text-tertiary font-mono">Conf: 98.7%</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-medium">Marcus Thorne</h3>
+<span class="font-mono-metric text-mono-metric text-on-surface-variant">MRN-884920 • Bedside Bay 03</span>
+</div>
+<div class="p-2 rounded-full bg-surface-container-highest/60 text-secondary hover:bg-surface-container-highest cursor-pointer transition-all shadow-sm">
+<span class="material-symbols-outlined text-lg">ios_share</span>
+</div>
+</div>
+<!-- SECTION 1: Autonomous Longitudinal Anamnesis -->
+<div class="bg-surface-container-low/70 rounded-[16px] p-space-md flex flex-col gap-space-xs shadow-inner">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Autonomous Longitudinal Anamnesis</span>
+<span class="material-symbols-outlined text-sm text-secondary">history</span>
+</div>
+<div class="flex flex-col gap-1.5 mt-1 font-body-sm text-body-sm text-on-surface">
+<div class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-1.5 shrink-0"></span>
+<span><strong>Cardiovascular:</strong> Essential HTN diagnosed 2018; controlled on Lisinopril 20mg q.d.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-1.5 shrink-0"></span>
+<span><strong>Lifestyle &amp; Heredity:</strong> Ex-smoker (10 pack-yrs, cessation 2021); paternal MI at age 52.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-1.5 shrink-0"></span>
+<span><strong>Recent Episodes:</strong> Nil documented in last 14 months; no known allergies.</span>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Differential Diagnosis Probabilities -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Differential Probabilities (Ranked)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bayesian Prior Synthesis</span>
+</div>
+<!-- Rank 1 -->
+<div class="p-space-sm rounded-[14px] bg-surface-container-highest/40 flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="font-medium text-on-surface">1. Acute Coronary Syndrome (NSTEMI)</span>
+<span class="font-mono-metric font-bold text-primary">64%</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary to-primary-container h-full w-[64%] rounded-full shadow-[0_0_10px_rgba(107,98,242,0.5)]"></div>
+</div>
+</div>
+<!-- Rank 2 -->
+<div class="p-space-sm rounded-[14px] bg-surface-container-highest/20 flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">2. Acute Pericarditis / Myopericarditis</span>
+<span class="font-mono-metric text-on-surface">22%</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary/60 h-full w-[22%] rounded-full"></div>
+</div>
+</div>
+<!-- Rank 3 -->
+<div class="p-space-sm rounded-[14px] bg-surface-container-highest/20 flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">3. Pulmonary Embolism (Wells Score 2.0)</span>
+<span class="font-mono-metric text-on-surface">11%</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden">
+<div class="bg-outline/50 h-full w-[11%] rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: Recommended Immediate Order Set -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Clinical Protocol Directives</span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">3 Orders Queued</span>
+</div>
+<div class="flex flex-col gap-1.5 font-body-sm text-body-sm">
+<label class="flex items-center gap-space-sm p-space-sm rounded-[12px] bg-surface-container-low/70 hover:bg-surface-container-low transition-colors cursor-pointer">
+<input checked="" class="accent-primary rounded w-4 h-4 cursor-pointer" type="checkbox"/>
+<span class="text-on-surface flex-1">12-Lead Electrocardiogram (Stat Bedside)</span>
+<span class="font-label-sm text-label-sm text-primary bg-primary/10 px-2 py-0.5 rounded-full">STAT</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-[12px] bg-surface-container-low/70 hover:bg-surface-container-low transition-colors cursor-pointer">
+<input checked="" class="accent-primary rounded w-4 h-4 cursor-pointer" type="checkbox"/>
+<span class="text-on-surface flex-1">High-Sensitivity Troponin I (0h, 2h Delta)</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">LAB</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-[12px] bg-surface-container-low/70 hover:bg-surface-container-low transition-colors cursor-pointer">
+<input checked="" class="accent-primary rounded w-4 h-4 cursor-pointer" type="checkbox"/>
+<span class="text-on-surface flex-1">Point-of-Care Bedside Echocardiogram (POCUS)</span>
+<span class="font-label-sm text-label-sm text-outline-variant bg-surface-container-highest px-2 py-0.5 rounded-full">IMAGING</span>
+</label>
+</div>
+<!-- Master Action Button -->
+<button class="mt-space-xs w-full py-3 rounded-full bg-on-background text-surface font-body-md text-body-md font-semibold hover:bg-white active:scale-[0.98] transition-all shadow-[0_0_24px_rgba(255,255,255,0.2)] flex items-center justify-center gap-2" id="order-commit-btn">
+<span class="material-symbols-outlined text-base">checklist</span>
+            Accept All Recommended Orders
+          </button>
+</div>
+</div>
+<!-- Quick Physician Note Drawer Placeholder -->
+<div class="p-space-md rounded-[18px] bg-surface-container-low/60 backdrop-blur-md flex items-center justify-between text-on-surface-variant shadow-sm hover:text-on-surface transition-colors cursor-pointer">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-primary">edit_note</span>
+<span class="font-body-sm text-body-sm">Append Quick Attending Addendum (Voice / Stylus)</span>
+</div>
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container-highest text-outline text-[10px] font-mono">⌘N</kbd>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for active queue items selection feedback
+  document.addEventListener('DOMContentLoaded', () => {
+    const rows = document.querySelectorAll('#opd-patient-list > div');
+    rows.forEach(row => {
+      row.addEventListener('click', () => {
+        rows.forEach(r => {
+          r.classList.remove('bg-surface-container-highest/80', 'shadow-[0_8px_24px_-4px_rgba(107,98,242,0.25)]');
+          r.classList.add('bg-surface-container-low/60');
+          const bar = r.querySelector('.absolute.left-0');
+          if (bar) bar.remove();
+        });
+        
+        row.classList.remove('bg-surface-container-low/60');
+        row.classList.add('bg-surface-container-highest/80', 'shadow-[0_8px_24px_-4px_rgba(107,98,242,0.25)]');
+        
+        const activeBar = document.createElement('div');
+        activeBar.className = 'absolute left-0 top-0 bottom-0 w-1 bg-primary rounded-r';
+        row.appendChild(activeBar);
+      });
+    });
+
+    const commitBtn = document.getElementById('order-commit-btn');
+    if (commitBtn) {
+      commitBtn.addEventListener('click', () => {
+        commitBtn.innerHTML = '<span class="material-symbols-outlined text-base text-tertiary">check_circle</span> Orders Transmitted to EMR';
+        commitBtn.classList.add('bg-surface-container-highest', 'text-on-surface');
+        setTimeout(() => {
+          commitBtn.innerHTML = '<span class="material-symbols-outlined text-base">checklist</span> Accept All Recommended Orders';
+          commitBtn.classList.remove('bg-surface-container-highest', 'text-on-surface');
+        }, 3200);
+      });
+    }
+  });
+</script></main><footer class="fixed bottom-5 left-0 right-0 z-40 pointer-events-none flex justify-center px-margin"><div class="pointer-events-auto bg-surface-container-high/80 backdrop-blur-md border border-white/10 px-margin py-2 rounded-full flex items-center gap-space-lg shadow-[0_8px_30px_rgba(0,0,0,0.5)]"><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface border border-white/10 font-mono">⌘K</span><span class="font-body-sm text-body-sm">Command Palette</span></div><div class="w-px h-3 bg-outline-variant/40"></div><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface border border-white/10 font-mono">⌘E</span><span class="font-body-sm text-body-sm">Triage Summary</span></div><div class="w-px h-3 bg-outline-variant/40"></div><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface border border-white/10 font-mono">ESC</span><span class="font-body-sm text-body-sm">Clear Focus</span></div></div></footer></body></html>
